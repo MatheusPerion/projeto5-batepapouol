@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+   <title>Bate Papo Uol</title>
+
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/styles.css">
+
+   <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+   <div class="overlay hidden" onclick="openMenu()"></div>
+   <header>
+      <img src="img/logoUOL.png">
+      <ion-icon name="people" onclick="openMenu()"></ion-icon>
+   </header>
+
+   <main>
+      <ul class="container-meessages">
+
+      </ul>
+   </main>
+
+   <footer>
+      <div class="message">
+         <input placeholder="Escreva aqui..." class="message-input" data="identifier=" send-message">
+         <span class="sending">Enviando para Todos</span>
+      </div>
+   </footer>
+
+</body>
+
+</html>

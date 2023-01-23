@@ -24,13 +24,13 @@
    </header>
 
    <main>
-      <ul class="container-meessages">
+      <ul class="container-messages">
 
       </ul>
    </main>
 
    <footer>
-      <div class="message">
+      <div class="message-field">
          <input placeholder="Escreva aqui..." class="message-input" data="identifier=" send-message">
          <span class="sending">Enviando para Todos</span>
       </div>
@@ -43,12 +43,23 @@
       </ul>
       <h3 class="menu-title">Escolha a visibilidade:</h3>
       <ul class="visibilities">
-         <li class="visibilities-public selected" onclick="selectVisibility(this, 'message')"data-identifier="visibility">
-         <ion-icon name="lock-open"></ion-icon>
-         Público
+         <li class="visibilities-public selected" onclick="selectVisibility(this, 'message')"
+            data-identifier="visibility">
+            <ion-icon name="lock-open"></ion-icon>
+            Público
+            <ion-icon class="check" name="checkmark-outline"></ion-icon>
+         </li>
+         <li class="visibilities-private" onclick="selectVisibility(this, 'private_message')"
+            data-identifier="visibility">
+            <ion-icon name="lock-closed"></ion-icon>
+            Reservadamente
+            <ion-icon class="check" name="checkmark-outline"></ion-icon>
          </li>
       </ul>
    </div>
+
+   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+   <script src="js/scripts.js"></script>
 </body>
 
 </html>
